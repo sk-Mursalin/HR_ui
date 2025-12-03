@@ -12,6 +12,9 @@ import { EmplyeesList } from "./components/EmplyeesList";
 import { EmployeeAdd } from "./components/EmployeeAdd";
 import { EmployeeView } from "./components/EmployeeView";
 import { EmployeeEdit } from "./components/EmployeeEdit";
+import { EmployeeSummaryCard } from "./components/EmployeeSummaryCard";
+import { List } from "./components/leave/List";
+import { AddLeave } from "./components/leave/AddLeave";
 
 function App() {
   return (
@@ -31,7 +34,14 @@ function App() {
           <Route path="employees/:id" element={<EmployeeView />} />
           <Route path="employees/edit/:id" element={<EmployeeEdit />} />
         </Route>
-        <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
+        <Route path="/employee-dashboard" element={<EmployeeDashboard />}>
+          <Route index element={<EmployeeSummaryCard />} />
+          <Route path="profile/:id" element={<EmployeeView />} />
+          <Route path="leaves" element={<List />} />
+          <Route path="add-leave" element={<AddLeave />} />
+
+
+        </Route>
       </Routes>
     </BrowserRouter>
   );
