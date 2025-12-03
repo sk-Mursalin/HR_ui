@@ -30,11 +30,6 @@ function App() {
           <Route path="add-employee" element={<EmployeeAdd />} />
           <Route path="employees/:id" element={<EmployeeView />} />
           <Route path="employees/edit/:id" element={<EmployeeEdit />} />
-
-
-
-
-
         </Route>
         <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
       </Routes>

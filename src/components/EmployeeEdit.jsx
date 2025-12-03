@@ -64,9 +64,9 @@ export const EmployeeEdit = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post(
-                "http://localhost:5000/employee/add",
-                formData,
+            const response = await axios.put(
+                `http://localhost:5000/employee/${id}`,
+                employee,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,
