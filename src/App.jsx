@@ -1,7 +1,6 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
-import Home from "./pages/Home";
 import AdminDashboard from "./pages/AdminDashboard";
 import EmployeeDashboard from "./pages/EmployeeDashboard";
 import DepermentList from "./components/DepermentList";
@@ -15,8 +14,12 @@ import { EmployeeEdit } from "./components/EmployeeEdit";
 import { EmployeeSummaryCard } from "./components/EmployeeSummaryCard";
 import { List } from "./components/leave/List";
 import { AddLeave } from "./components/leave/AddLeave";
+import { AdminLeaveView } from "./components/leave/AdminLeaveView";
+import { LeaveDetails } from "./components/leave/LeaveDetails";
+
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -33,6 +36,10 @@ function App() {
           <Route path="add-employee" element={<EmployeeAdd />} />
           <Route path="employees/:id" element={<EmployeeView />} />
           <Route path="employees/edit/:id" element={<EmployeeEdit />} />
+          <Route path="leaves" element={<AdminLeaveView />} />
+          <Route path="leave/:id" element={<LeaveDetails />} />
+
+
         </Route>
         <Route path="/employee-dashboard" element={<EmployeeDashboard />}>
           <Route index element={<EmployeeSummaryCard />} />
