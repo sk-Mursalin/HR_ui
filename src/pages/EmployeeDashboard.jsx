@@ -1,14 +1,17 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router-dom"
 import { EmployeeSidebar } from "../components/EmployeeSidebar"
 import Navbar from "../components/Navbar"
 import { useAuth } from "../context/AuthContext";
 
 const EmployeeDashboard = () => {
-
-  const { loading } = useAuth();
+  const navigate = useNavigate()
+  const { loading, user } = useAuth();
 
   if (loading) {
     return <h1>Loading...</h1>;  // or a spinner
+  }
+  if (!user) {
+    navigate("/login")
   }
   return (
     <div className='flex'>
