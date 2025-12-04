@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://hr-server-eight.vercel.app/auth/login",
         { email, password }
       );
       if (response.data.success) {

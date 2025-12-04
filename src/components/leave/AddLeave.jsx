@@ -21,7 +21,7 @@ export const AddLeave = () => {
         e.preventDefault();
         try {
             const responnse = await axios.post(
-                `http://localhost:5000/leave/add`, leave,
+                `https://hr-server-eight.vercel.app/leave/add`, leave,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,

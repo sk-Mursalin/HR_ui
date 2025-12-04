@@ -10,7 +10,7 @@ export const EmplyeesList = () => {
 
     useEffect(() => {
         const fetchEmployees = async () => {
-            const responnse = await axios.get('http://localhost:5000/employee', {
+            const responnse = await axios.get('https://hr-server-eight.vercel.app/employee', {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

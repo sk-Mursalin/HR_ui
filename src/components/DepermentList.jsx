@@ -17,7 +17,7 @@ export const DepermentList = () => {
     
     useEffect(() => {
         const fetchDepartments = async () => {
-            const responnse = await axios.get('http://localhost:5000/department', {
+            const responnse = await axios.get('https://hr-server-eight.vercel.app/department', {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

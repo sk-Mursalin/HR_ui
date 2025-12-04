@@ -65,7 +65,7 @@ export const EmployeeEdit = () => {
 
         try {
             const response = await axios.put(
-                `http://localhost:5000/employee/${id}`,
+                `https://hr-server-eight.vercel.app/employee/${id}`,
                 employee,
                 {
                     headers: {

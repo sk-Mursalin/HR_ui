@@ -10,7 +10,7 @@ export const List = () => {
     let sno = 1
     const fetchLeaves = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/leave/${user._id}`, {
+            const response = await axios.get(`https://hr-server-eight.vercel.app/leave/${user._id}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },

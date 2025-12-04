@@ -28,7 +28,7 @@ export const EmployeeAdd = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/employee/add",
+        "https://hr-server-eight.vercel.app/employee/add",
         formData,
         {
           headers: {

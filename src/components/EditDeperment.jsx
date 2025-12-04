@@ -39,7 +39,7 @@ export const EditDeperment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.put(`http://localhost:5000/department/${id}`, departments, {
+            const response = await axios.put(`https://hr-server-eight.vercel.app/department/${id}`, departments, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

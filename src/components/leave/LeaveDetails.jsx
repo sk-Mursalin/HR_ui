@@ -11,7 +11,7 @@ export const LeaveDetails = () => {
         const fetchLeave = async () => {
             try {
                 const responnse = await axios.get(
-                    `http://localhost:5000/leave/details/${id}`,
+                    `https://hr-server-eight.vercel.app/leave/details/${id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -37,7 +37,7 @@ export const LeaveDetails = () => {
     const changeStatus = async (id, status) => {
         try {
             const responnse = await axios.put(
-                `http://localhost:5000/leave/${id}`,{status},
+                `https://hr-server-eight.vercel.app/leave/${id}`,{status},
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,

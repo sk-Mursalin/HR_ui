@@ -9,7 +9,7 @@ export const AdminLeaveView = () => {
     const [leaves, setLeaves] = useState(null)
     useEffect(() => {
         const fetcleaves = async () => {
-            const responnse = await axios.get('http://localhost:5000/leave', {
+            const responnse = await axios.get('https://hr-server-eight.vercel.app/leave', {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }
