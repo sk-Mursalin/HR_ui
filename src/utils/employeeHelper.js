@@ -3,7 +3,7 @@ import axios from "axios";
 export const fetchDepartments = async () => {
     let departments
     try {
-        const responnse = await axios.get("http://localhost:5000/department", {
+        const responnse = await axios.get("https://hr-server-eight.vercel.app/department", {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
             },

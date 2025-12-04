@@ -29,7 +29,7 @@ export const EmployeeEdit = () => {
         const fetchEmployee = async () => {
             try {
                 const responnse = await axios.get(
-                    `http://localhost:5000/employee/${id}`,
+                    `https://hr-server-eight.vercel.app/${id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`,
