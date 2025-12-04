@@ -1,18 +1,69 @@
-# React + Vite
+# Employee Management Frontend s
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
 
-Currently, two official plugins are available:
+**Employee Management** System is a full-stack web application designed to help HR teams efficiently manage employees, departments, and leave requests within an organization.
+This system centralizes employee data, simplifies HR tasks, and ensures smooth workflow management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
 
-## React Compiler
+- **Frontend:** React.js, Vite, Redux Toolkit, Tailwind CSS
+- **State Management:** Context APi
+- **Backend:** [Employee Management Backend](https://github.com/sk-Mursalin/HR_server)
+- **Authentication:** JWT
+- **Database:** MongoDB (via backend)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🏗️ Installation & Setup
 
-Note: This will impact Vite dev & build performances.
+1. Clone the repository:
 
-## Expanding the ESLint configuration
+```sh
+git clone https://github.com/sk-Mursalin/HR_ui.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Navigate to the project directory:
+
+```sh
+cd HR_ui
+```
+
+3. Install dependencies:
+
+```sh
+npm install
+```
+
+4. Start the development server:
+
+```sh
+npm run dev
+```
+
+## 📌 Features
+
+- 🖥️ **Admin Dashboard** – HR can manage all employees, departments, and leave requests from one place.
+- ➕ **Add Employee** – Easily add new employees with full details.
+- 📝 **Edit Employee** – Update or modify employee information anytime.
+- ❌ **Delete Employee** – Remove employees securely from the system.
+- 📄 **View Employee Profile** – HR can view detailed profiles of all employees.
+- 🌴 **Apply Leave** – Employees can request leave with reason and dates.
+- ✅ **Approve Leave** – HR can approve leave requests directly from the dashboard.
+- ❌ **Reject Leave** – HR can reject leave requests with proper message.
+- 🔐 **Authentication** – Secure login using JWT for HR/Admin access.
+- 🔐 **Employee Login** – Employees can securely log in with their credentials.
+- 🏠 **Employee Dashboard** – Employees can view their personal details and leave history.
+- 👀 **Leave Status Tracking** – Employees can see their leave status (Pending, Approved, Rejected).
+- 🏢 **Department Management** – Create and manage departments (optional).
+
+
+
+
+## 🔧 API Endpoints
+
+The frontend interacts with the backend API hosted in the [Employee Management-backend](https://github.com/sk-Mursalin/HR_server). Ensure the backend is running before using the frontend.
+
+## 🚀 Deployment
+
+deployed on Vercel.
+
+---
